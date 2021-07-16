@@ -4,11 +4,9 @@ from solution import Solution
 
 
 class SolutionTestCase(TestCase):
-    def setUp(self) -> None:
-        self.instance = Solution()
-
     def test_solution(self) -> None:
+        obj = Solution()
         arr1 = [1, 2, 1]
         arr2 = [1, 3, 2, 1]
-        self.assertEqual(self.instance.getConcatenation(arr1), [1, 2, 1, 1, 2, 1])
-        self.assertEqual(self.instance.getConcatenation(arr2), [1, 3, 2, 1, 1, 3, 2, 1])
+        self.assertEqual(obj.getConcatenation(arr1), [1, 2, 1, 1, 2, 1])
+        self.assertEqual(obj.getConcatenation(arr2), [1, 3, 2, 1, 1, 3, 2, 1])
