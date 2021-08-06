@@ -9,7 +9,6 @@ class Solution:
                     j += 1
                 count += j - i - 1
                 i += 1
-
             if count < k:
                 low = mid + 1
             else:
